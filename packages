@@ -1,0 +1,3 @@
+build-essential pkg-config 
+libusb-1.0 libffi-dev libncurses-dev
+gcc-avr binutils-avr avr-libc

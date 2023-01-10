@@ -1,0 +1,14 @@
+[Unit]
+Description=Klipper
+
+[Service]
+WorkingDirectory=/opt/klipper
+ExecStart=/opt/klipper/bin/python klippy/klippy.py --logfile=log/klippy.log --input-tty=printer printer.cfg
+Restart=on-failure
+RestartSec=10
+User=klipper
+Group=klipper
+
+[Install]
+WantedBy=multi-user.target
+
